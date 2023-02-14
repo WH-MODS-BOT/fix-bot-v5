@@ -160,7 +160,7 @@ global.APIKeys = { // APIKey Here
 /*============== WATERMARK ==============*/
 global.wm = '                「 WH-MODS-BOT-V1 」' //Main Watermark
 global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘WH-MODS-BOT-V1 ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
-global.wm3 = htjava + "⫹⫺ WH-MODS-BOT-V1"
+global.wm3 = "⫹⫺ WH-MODS-BOT-V1"
 global.botdate = `⫹⫺ DATE: ${week} ${date}\n⫹⫺ TIME: ${wktuwib}`
 global.bottime = `T I M E : ${wktuwib}`
 global.titlebot = `⫹⫺ WhatsApp Bot | By WH-MODS-DEV`
