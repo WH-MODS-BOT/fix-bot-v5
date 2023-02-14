@@ -74,9 +74,9 @@ Script ini untuk semua orang, bukan untuk Dijual. Jika dijual neraka menunggumu 
 
 ## `SETTING`
 
-- Owner Number [Here](https://github.com/WH-MODS-BOT/fix-bot-v3/blob/master/config.js#L1)
-- Owner Name [Here](https://github.com/WH-MODS-BOT/fix-bot-v3/blob/master/config.js#L1)
-- Bot Name [Here](https://github.com/WH-MODS-BOT/fix-bot-v3/blob/master/config.js#L1)
+- Owner Number [Here](https://github.com/WH-MODS-BOT/fix-bot-v5/blob/fix-bot-v5/config.js#L1)
+- Owner Name [Here](https://github.com/WH-MODS-BOT/fix-bot-v5/blob/fix-bot-v5/config.js#L1)
+- Bot Name [Here](https://github.com/WH-MODS-BOT/fix-bot-v5/blob/fix-bot-v5/config.js#L1)
 ---------
 
 ## ```Heroku Buildpack```
@@ -94,7 +94,7 @@ $ pkg install git -y
 $ pkg install nodejs -y
 $ pkg install ffmpeg -y
 $ pkg install imagemagick -y
-$ git clone https://github.com/WH-MODS-BOT/fix-bot-v3
+$ git clone https://github.com/WH-MODS-BOT/fix-bot-v5
 $ cd fix-bot-v3
 $ npm i 
 ```
@@ -137,7 +137,7 @@ apt install wget curl git ffmpeg imagemagick build-essential libcairo2-dev libpa
 ubuntu
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 apt install -y nodejs gcc g++ make
-git clone https://github.com/WH-MODS-BOT/fix-bot-v3
+git clone https://github.com/WH-MODS-BOT/fix-bot-v5
 cd fix-bot-v3
 npm install
 npm update
@@ -153,8 +153,8 @@ npm update
 * Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/WH-MODS-BOT/fix-bot-v3
-cd fix-bot-v3
+git clone https://github.com/WH-MODS-BOT/fix-bot-v5
+cd fix-bot-v5
 npm install
 npm update
 ```
