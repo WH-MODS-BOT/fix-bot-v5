@@ -3,9 +3,6 @@ let { MessageType } = (await import('@adiwajshing/baileys')).default
 let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
   let type = (args[0] || '').toLowerCase()
   let _type = (args[0] || '').toLowerCase()
-  let res = JSON.parse(readFileSync('./json/emoji.json'))
-  let em = res.emoji
-
 //------- NOMOR
   let nowner = `${nomorown.split`@`[0]}@s.whatsapp.net`
   let teksnomor = `${htki} *OWNER* ${htka}
@@ -106,16 +103,7 @@ let desop = ["• Nomor Owner",
 "• Sewa",
 "• Buy Premium"
 ]
-let row = Object.keys(namop, desop, idop).map((v, index) => ({
-  title: `${htki} ${dmenub} ${namop[v]} ${htka}`,
-  description: `\nNo.${1 + index}\n${htjava}${desop[v]}\n${dmenuf}`,
-  rowId: `${idop[v]}`
-}))
-let button = {
-  buttonText: `☂️ CLICK HERE ☂️`,
-  description: teks,
-  footerText: wm
-}
+
 
   try {
     if (/(creator|owner)/i.test(command)) {
@@ -134,7 +122,7 @@ let button = {
             break
             
           default:
-            return await conn.sendListM(m.chat, button, row, m)
+            
         }
     } else if (/enchant|enchan/i.test(command)) {
       const count = args[2] && args[2].length > 0 ? Math.min(99999999, Math.max(parseInt(args[2]), 1)) : !args[2] || args.length < 4 ? 1 :Math.min(1, count)
