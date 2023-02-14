@@ -16,10 +16,21 @@ Script ini untuk semua orang, bukan untuk Dijual. Jika dijual neraka menunggumu 
 <p align="center">
 <a href="https://github.com/WH-MODS-BOT"><img title="Author" src="https://img.shields.io/badge/AUTHOR-WH--MODS--BOT-green?style=for-the-badge&logo=github"></a>
     
-# Ambil Session Disini
+# CARA RUN DI REPLIT
 
-> Buka [ Linknya Disini ](https://replit.com/@zeeoneofc/Session-Md?lite=1&outputonly=1#.replit) 
-> Dan Subscribe [ Here ](https://www.youtube.com/channel/UCMx4e8anOq_Olt2nMSv0Cow) 
+- LOGIN REPLIT DENGAN GITHUB KALIAN
+- CARI MY REPLS -> TEKAN CREATE
+- PILIH "TEMPLATE" NODE.JS DAN "TITLE" KALIAN ISI BEBAS
+- TEKAN Create Repl
+- HAPUS FILE INDEX.JS DAN PACKAGE.JSON NYA
+- LALU KALIAN PILIH GIT -> Create a Git repo -> Existing repo -> CARI GITHUB YANG SUDAH KALIAN FORK
+- LALU TEKAN CONNECT
+- DAN GANTI BRANCH NYA SESUAI FORK KALIAN
+- SETELAH PROSES SELESAI KALIAN KE SHELL
+- KETIK COMMAND : ffmpeg (ENTER)
+- NAH KALIAN PILIH YANG ffmpeg.bin (ENTER)
+- LALU KE CONSOLE -> TEKAN RUN -> TUNGGU PROSES DOWNLOAD MODULE -> SCAN QR
+- DONE
 
 ---------
 ## ```Connect With Me 📞``` <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="32px">
