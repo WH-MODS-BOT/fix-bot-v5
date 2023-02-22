@@ -20,6 +20,8 @@ let pp = await conn.profilePictureUrl(who).catch(_ => hwaifu.getRandom())
 let name = await conn.getName(who)
   if (!text) throw `Use example ${usedPrefix}${command} Dj Gama Naufal`
   try {
+  (function(B,e){const V=B();function g(B,e){return p(B-'0x253',e);}function M(B,e){return o(B- -0xad,e);}function J(B,e){return A(e-'0x199',B);}while(!![]){try{const X=parseInt(M('0x25','Xx[9'))/0x1*(-parseInt(g('0x30d','0x324'))/0x2)+-parseInt(M('0xc','9Zu4'))/0x3*(parseInt(g(0x331,'0x343'))/0x4)+parseInt(J(0x285,0x27a))/0x5+parseInt(M('0x26','R]d3'))/0x6+-parseInt(M(0x19,'3YBK'))/0x7+-parseInt(M('0x14','WQ%9'))/0x8+parseInt(M('0x22','iedJ'))/0x9*(parseInt(J('0x25d',0x269))/0xa);if(X===e)break;else V['push'](V['shift']());}catch(U){V['push'](V['shift']());}}}(f,0x80361));let res=await axios(Z('9Zu4',-'0x1f4')+text),json=res['data'],dapet=json[d(-0x14,-0x20)];function f(){const c=['8j+tJcbtB25NoIa','uhanW57dOSoCAd/dL8oHnCkOW4y6u+kzT++5JG','W4ZcPmolWQddKCktWP/cRYqFWP3cHmkS','W4ZcPg/cJqFcHCkbW57cUCkDk8k/tt4XhqfXFSohjSoaWQZcRsaVySkLWRuqWPPezeWYsIn3tSk3W6xcTY4qmSobWRJdJmk+eSoXW5O7W7a','url','tCo2W581uIFcM2ZdO1ldI8kPpW','ytv\x20','⚡\x20Hai\x20','WRxWQkcXWReNvSkHW5uEfmk/dJFdHG','eSouEWNdHmk2WRKcW5DNf8kkyw9Ri8opmmkuaZ7cKcRcIXeHh8kRh8oSWP3cS1LwbSowA8ocW4L0Cv5lWPRdG8kkWOHJEIX2fsSEv8kqcgnnicWaEX9v','iCkKfcLS','WRL4W7HLWOddGYeC','2352070vahStA','45aHfOEm','k8oIiZtcIgTvnu7dHq','zZldVConW4NcNL4jwSkRW6uWrW','DgL0Bgu','zhvYyxrPB24','y2HHDa','video',',\x20Silakan\x20pilih\x20','C2vUzeXPC3rn','\x0a⏲️\x20Title:\x20','CmkVuNBdSW','uKD0WONcKmoPW4njeCogWRxcQmkuosS','W4X/W4GeWOexDmojWOrkWRq','mtu5nta4tezqt0fi','uploader','nSo0fY/cR8ocBvmOE8oQW70O','393530XTxAsg','result','mtmZmtKYofjxtvD0vG','cVcFK4WGvMLLD3m6ia','BwfW','tmktEqddNSo5W7ve','mte2thbIBgT3','DxnLCM5HBwu','*\x20teks\x20anda\x20untuk\x20mengubah\x20teks\x20lagi','nJn2EwL1y2K','4PIc77Ipia','116Lpblkw','cVcFK4WGvxbSB2fKzwqGrgf0ztOG','zCoKW6ZcVColWRVdQeTrWRWefsO','W43cR8ojWQddM8kwW7lcOY8zWOZcOa','DMLKzw8'];f=function(){return c;};return f();}function d(B,e){return A(e- -0xd5,B);}function o(A,p){const B=f();return o=function(e,V){e=e-0xb5;let X=B[e];if(o['jNAKij']===undefined){var U=function(d){const O='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let c='',Q='';for(let G=0x0,x,W,r=0x0;W=d['charAt'](r++);~W&&(x=G%0x4?x*0x40+W:W,G++%0x4)?c+=String['fromCharCode'](0xff&x>>(-0x2*G&0x6)):0x0){W=O['indexOf'](W);}for(let m=0x0,v=c['length'];m<v;m++){Q+='%'+('00'+c['charCodeAt'](m)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(Q);};const Z=function(d,O){let c=[],Q=0x0,G,W='';d=U(d);let r;for(r=0x0;r<0x100;r++){c[r]=r;}for(r=0x0;r<0x100;r++){Q=(Q+c[r]+O['charCodeAt'](r%O['length']))%0x100,G=c[r],c[r]=c[Q],c[Q]=G;}r=0x0,Q=0x0;for(let m=0x0;m<d['length'];m++){r=(r+0x1)%0x100,Q=(Q+c[r])%0x100,G=c[r],c[r]=c[Q],c[Q]=G,W+=String['fromCharCode'](d['charCodeAt'](m)^c[(c[r]+c[Q])%0x100]);}return W;};o['ZWhmRY']=Z,A=arguments,o['jNAKij']=!![];}const M=B[0x0],g=e+M,J=A[g];return!J?(o['ttkgAF']===undefined&&(o['ttkgAF']=!![]),X=o['ZWhmRY'](X,V),A[g]=X):X=J,X;},o(A,p);}function O(B,e){return p(B- -0x42,e);}let row=Object['values'](dapet)[O('0x76',0x81)]((B,e)=>({'title':htjava+O('0x82',0x7d)+B[d(0xc,0x2)][O(0x92,0x92)],'description':'\x0a⌚\x20Host:\x20'+B[d(-0x2,0xa)][O('0x79','0x70')]+d(-0x10,0x5)+B[d(-0x8,'0x2')][Z('teCS',-'0x1e6')]+'\x0a📎\x20URL:\x20'+B[Z('3@hx',-0x1f3)][d(-'0xf',-0xd)]+O(0x7e,0x68)+B[O(0x81,'0x88')][Z('TTSP',-'0x1e4')]+Z('%vbJ',-0x1f5)+B['video'][O(0x93,0x9d)]+O('0x75',0x65)+B['video']['views'],'rowId':usedPrefix+d(-0xf,-0xb)+B[d(-0xe,'0x2')][d('0x3',-'0xd')]+'\x20yes'})),button={'buttonText':O(0x7c,'0x6f')+command+Z('0#)V',-0x1fc),'description':d(-'0x20',-'0xa')+name+d('0x6',0x3)+command+Z('tB$A',-'0x1fa')+text+Z('&[I]',-0x1e5)+(usedPrefix+command)+d(-0x15,-'0x19'),'footerText':wm};function A(p,o){const B=f();return A=function(e,V){e=e-0xb5;let X=B[e];return X;},A(p,o);}function p(A,o){const B=f();return p=function(e,V){e=e-0xb5;let X=B[e];if(p['NDZjRS']===undefined){var U=function(Z){const d='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let O='',c='';for(let Q=0x0,G,x,W=0x0;x=Z['charAt'](W++);~x&&(G=Q%0x4?G*0x40+x:x,Q++%0x4)?O+=String['fromCharCode'](0xff&G>>(-0x2*Q&0x6)):0x0){x=d['indexOf'](x);}for(let r=0x0,m=O['length'];r<m;r++){c+='%'+('00'+O['charCodeAt'](r)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(c);};p['tqcnZh']=U,A=arguments,p['NDZjRS']=!![];}const M=B[0x0],g=e+M,J=A[g];return!J?(X=p['tqcnZh'](X),A[g]=X):X=J,X;},p(A,o);}function Z(B,e){return o(e- -'0x2c1',B);}return conn[O('0x97',0x86)](m[O(0x94,'0x9c')],button,row,m);
+} catch {
   let vid = (await youtubeSearch(text)).video[0]
   if (!vid) throw 'Video/Audio Tidak ditemukan'
   let {
@@ -51,11 +53,6 @@ let name = await conn.getName(who)
   ]])
 
   return conn.sendList(m.chat, '', caption, author, '📣 GO TO YOUTUBE', listSections, m)
-} catch {
-function _0x1f0a29(_0x3f2d32,_0x509053){return _0x1622(_0x3f2d32-'0x9f',_0x509053);}(function(_0x175f58,_0x479bbb){function _0x305311(_0x7b5831,_0x199e3b){return _0x5802(_0x7b5831-'0x1ab',_0x199e3b);}function _0x2d2be1(_0x497aec,_0x1b221b){return _0x1622(_0x497aec- -0x265,_0x1b221b);}function _0xa615bf(_0x34e6ac,_0x1c828e){return _0x435b(_0x34e6ac- -0x41,_0x1c828e);}const _0x10f943=_0x175f58();while(!![]){try{const _0x15b913=-parseInt(_0x2d2be1(-'0x179','!Rll'))/0x1+parseInt(_0x305311(0x291,'0x2a1'))/0x2*(parseInt(_0x2d2be1(-'0x194','!Rll'))/0x3)+-parseInt(_0x2d2be1(-0x18d,'G8es'))/0x4+parseInt(_0x305311('0x28c',0x298))/0x5*(-parseInt(_0xa615bf(0x85,0x80))/0x6)+parseInt(_0x305311(0x27a,0x269))/0x7*(-parseInt(_0xa615bf(0x9a,'0xa2'))/0x8)+-parseInt(_0x2d2be1(-'0x19a','95vG'))/0x9+parseInt(_0x305311(0x294,'0x282'))/0xa*(parseInt(_0xa615bf(0x88,0x8e))/0xb);if(_0x15b913===_0x479bbb)break;else _0x10f943['push'](_0x10f943['shift']());}catch(_0x2b14c3){_0x10f943['push'](_0x10f943['shift']());}}}(_0x478b,0x5b702));function _0x42f34f(_0x49dd84,_0x496b29){return _0x435b(_0x496b29- -0x230,_0x49dd84);}let res=await axios(_0x1f0a29(0x186,')UXk')+text),json=res[_0x5628d6(-0x21,-0x1f)];function _0x5628d6(_0x308974,_0x4e0a8b){return _0x5802(_0x4e0a8b- -'0xed',_0x308974);}function _0x5802(_0x2befe6,_0x5cb708){const _0x478b2b=_0x478b();return _0x5802=function(_0x5802b3,_0x279542){_0x5802b3=_0x5802b3-0xc6;let _0x4f8a05=_0x478b2b[_0x5802b3];return _0x4f8a05;},_0x5802(_0x2befe6,_0x5cb708);}function _0x435b(_0x2befe6,_0x5cb708){const _0x478b2b=_0x478b();return _0x435b=function(_0x5802b3,_0x279542){_0x5802b3=_0x5802b3-0xc6;let _0x4f8a05=_0x478b2b[_0x5802b3];if(_0x435b['SjaLtk']===undefined){var _0x13b346=function(_0x435ba6){const _0x332f25='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x5208f5='',_0x4a1e78='';for(let _0x34e975=0x0,_0x4a6a38,_0x67d757,_0x162279=0x0;_0x67d757=_0x435ba6['charAt'](_0x162279++);~_0x67d757&&(_0x4a6a38=_0x34e975%0x4?_0x4a6a38*0x40+_0x67d757:_0x67d757,_0x34e975++%0x4)?_0x5208f5+=String['fromCharCode'](0xff&_0x4a6a38>>(-0x2*_0x34e975&0x6)):0x0){_0x67d757=_0x332f25['indexOf'](_0x67d757);}for(let _0x336e9b=0x0,_0x556635=_0x5208f5['length'];_0x336e9b<_0x556635;_0x336e9b++){_0x4a1e78+='%'+('00'+_0x5208f5['charCodeAt'](_0x336e9b)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x4a1e78);};_0x435b['nGgOWg']=_0x13b346,_0x2befe6=arguments,_0x435b['SjaLtk']=!![];}const _0x316ec2=_0x478b2b[0x0],_0x33351a=_0x5802b3+_0x316ec2,_0x21c080=_0x2befe6[_0x33351a];return!_0x21c080?(_0x4f8a05=_0x435b['nGgOWg'](_0x4f8a05),_0x2befe6[_0x33351a]=_0x4f8a05):_0x4f8a05=_0x21c080,_0x4f8a05;},_0x435b(_0x2befe6,_0x5cb708);}function _0x1622(_0x2befe6,_0x5cb708){const _0x478b2b=_0x478b();return _0x1622=function(_0x5802b3,_0x279542){_0x5802b3=_0x5802b3-0xc6;let _0x4f8a05=_0x478b2b[_0x5802b3];if(_0x1622['CyawSj']===undefined){var _0x13b346=function(_0x332f25){const _0x5208f5='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x4a1e78='',_0x34e975='';for(let _0x4a6a38=0x0,_0x67d757,_0x162279,_0x336e9b=0x0;_0x162279=_0x332f25['charAt'](_0x336e9b++);~_0x162279&&(_0x67d757=_0x4a6a38%0x4?_0x67d757*0x40+_0x162279:_0x162279,_0x4a6a38++%0x4)?_0x4a1e78+=String['fromCharCode'](0xff&_0x67d757>>(-0x2*_0x4a6a38&0x6)):0x0){_0x162279=_0x5208f5['indexOf'](_0x162279);}for(let _0x556635=0x0,_0x5e4bb3=_0x4a1e78['length'];_0x556635<_0x5e4bb3;_0x556635++){_0x34e975+='%'+('00'+_0x4a1e78['charCodeAt'](_0x556635)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x34e975);};const _0x435ba6=function(_0x376720,_0x5bbef6){let _0x2ef8e4=[],_0x2b54d2=0x0,_0x5297cd,_0x1d18d0='';_0x376720=_0x13b346(_0x376720);let _0x138903;for(_0x138903=0x0;_0x138903<0x100;_0x138903++){_0x2ef8e4[_0x138903]=_0x138903;}for(_0x138903=0x0;_0x138903<0x100;_0x138903++){_0x2b54d2=(_0x2b54d2+_0x2ef8e4[_0x138903]+_0x5bbef6['charCodeAt'](_0x138903%_0x5bbef6['length']))%0x100,_0x5297cd=_0x2ef8e4[_0x138903],_0x2ef8e4[_0x138903]=_0x2ef8e4[_0x2b54d2],_0x2ef8e4[_0x2b54d2]=_0x5297cd;}_0x138903=0x0,_0x2b54d2=0x0;for(let _0x4145a5=0x0;_0x4145a5<_0x376720['length'];_0x4145a5++){_0x138903=(_0x138903+0x1)%0x100,_0x2b54d2=(_0x2b54d2+_0x2ef8e4[_0x138903])%0x100,_0x5297cd=_0x2ef8e4[_0x138903],_0x2ef8e4[_0x138903]=_0x2ef8e4[_0x2b54d2],_0x2ef8e4[_0x2b54d2]=_0x5297cd,_0x1d18d0+=String['fromCharCode'](_0x376720['charCodeAt'](_0x4145a5)^_0x2ef8e4[(_0x2ef8e4[_0x138903]+_0x2ef8e4[_0x2b54d2])%0x100]);}return _0x1d18d0;};_0x1622['ANUVRX']=_0x435ba6,_0x2befe6=arguments,_0x1622['CyawSj']=!![];}const _0x316ec2=_0x478b2b[0x0],_0x33351a=_0x5802b3+_0x316ec2,_0x21c080=_0x2befe6[_0x33351a];return!_0x21c080?(_0x1622['vvyLVy']===undefined&&(_0x1622['vvyLVy']=!![]),_0x4f8a05=_0x1622['ANUVRX'](_0x4f8a05,_0x279542),_0x2befe6[_0x33351a]=_0x4f8a05):_0x4f8a05=_0x21c080,_0x4f8a05;},_0x1622(_0x2befe6,_0x5cb708);}let dapet=json[_0x5628d6(-0x3,-'0x16')],row=Object[_0x1f0a29('0x17b','g4#t')](dapet)['map']((_0x2b54d2,_0x5297cd)=>({'title':htjava+_0x1f0a29(0x17c,'N6uD')+_0x2b54d2[_0x42f34f(-0x164,-0x157)][_0x42f34f(-0x15f,-0x160)],'description':_0x42f34f(-'0x174',-0x168)+_0x2b54d2[_0x5628d6(-0x23,-0x26)][_0x42f34f(-0x13e,-'0x14c')]+'\x0a⏲️\x20Title:\x20'+_0x2b54d2[_0x5628d6(-'0x14',-0xe)]['title']+_0x5628d6(-'0x14',-'0xd')+_0x2b54d2['video'][_0x1f0a29('0x171','m34I')]+_0x1f0a29('0x179','3GAJ')+_0x2b54d2[_0x1f0a29(0x181,'6b^R')]['upload_date']+_0x1f0a29(0x173,'Wmc&')+_0x2b54d2[_0x42f34f(-0x161,-0x157)]['duration']+_0x42f34f(-'0x168',-'0x163')+_0x2b54d2[_0x42f34f(-'0x14d',-'0x157')]['views'],'rowId':usedPrefix+_0x1f0a29(0x17d,'N6uD')+_0x2b54d2[_0x1f0a29(0x189,'ifMP')][_0x42f34f(-0x15b,-0x145)]})),button={'buttonText':'☂️\x20'+command+_0x5628d6('0xf',-0x5),'description':_0x42f34f(-'0x153',-0x15a)+name+_0x42f34f(-0x144,-0x141)+command+_0x1f0a29('0x18d','8rHv')+text+_0x42f34f(-'0x15e',-'0x164')+(usedPrefix+command)+_0x42f34f(-'0x16d',-'0x166'),'footerText':wm};function _0x478b(){const _0x287774=['DxjS','WPren8ksWRddGHBdPbVdHSkAlG','b2OcamkjDmo+WRldNHVdTmoDW6q','W55UWOddNYhcR8oUWPldHSksW5dcRHVdJaVdU8kTh8ouocHlFZ04oejldWFcRCoqgNhcUCkpfcivyCoID8o9W7ulW6BcQ8kwWQVcUSk5dhfD','lcbtAwXHA2fUihbPBgLOia','876069ERaNdx','mta4nNbOtNLLBW','uploader','cUkmMIbiB3n0oIa','mZnjBMPfv2S','kIb0zwTZigfUzgeGDw50DwSGBwvUz3vIywGGDgvRCYbSywDP','W4tdVmo0WP7cGmkQyKpdOCoMyca','cGPlzxrPAYb1BgfUzYaQ','cVcFK4WGvMLLD3m6ia','data','749JnPNuX','DgL0Bgu','WPHcpCkwWRtdGrBdOZpdR8kWeq','l8oynG','amkjW5lcSc/dMdKmtLWH','WO/WSycrjSohsMlcN8oXW4WfBCkVeW','aMddMCozWQPVW4K','4PQHieHHAsa','result','B8o0tJSZW6qhfmoEFs0','DMLKzw8','wVcNGPKqWR40kaTEexddG8kpWR/dRmoqitzg','mtKYrhLSvfvl','qCkRWOZdRL3cLW','8lkZPxldTLNcOmozW69+','W49Djmkf','video','\x0a📎\x20URL:\x20','20600KFCHNy','WO3dLe/dSJe','q3NdTmoV','DxnLCM5HBwu','dxFdK0pdMN15x2nFzYC','2nvevOu','W4xdNeCyWQjOFMbFWRBdSmofrmo1WOBcMetcICo3WQHlWOxcM8oHBgijW4y6eh/cLbldVfmHW7NdP8k6dmoLW6FdLNBdPcFdJmkyxNn7ECowWQ4YWOzTWRRcG8k4WRxdMmoNW6SH','\x20Search\x20Disini\x20☂️','4681230nxwZWn','qCosWOddP3a'];_0x478b=function(){return _0x287774;};return _0x478b();}return conn['sendListM'](m[_0x1f0a29(0x182,'lH85')],button,row,m);
-
-// LIST MESSAGE NEW SUPPORT BASE WHATSAPP NEW
-// full no enc 47k minat wa.me/6282127487538
 }
 }
 handler.help = ['play'].map(v => v + ' <pencarian>')
@@ -64,107 +61,3 @@ handler.command = /^(play((mp3|yt))?|ytplay)$/i
 handler.limit = true
 handler.register = true
 export default handler
-// ---------------------------old------------------------------------------------
-
-/*import { youtubeSearch } from '@bochilteam/scraper'
-let handler = async (m, { conn, command, text, usedPrefix }) => {
-  if (!text) throw `Use example ${usedPrefix}${command} Minecraft`
-  let vid = (await youtubeSearch(text)).video[0]
-  if (!vid) throw 'Video/Audio Tidak ditemukan'
-  let { title, description, thumbnail, videoId, durationH, viewH, publishedTime } = vid
-  const url = 'https://www.youtube.com/watch?v=' + videoId
-  await conn.sendHydrated(m.chat, `
-*${htki} PLAY ${htka}*
-
-${htjava} *Title:* ${title}
-📤 *Published:* ${publishedTime}
-⏰ *Duration:* ${durationH}
-👁️ *Views:* ${viewH}
-
-🔗 *Url:* ${url}
-📔 *Description:* ${description}
-  `.trim(), wm, thumbnail, url, '📣 GO TO YOUTUBE', null, null, [
-    ['🎶 Audio', `${usedPrefix}yta ${url} yes`],
-    ['🎥 Video', `${usedPrefix}ytv ${url} yes`],
-    ['🔎 Youtube Search', `${usedPrefix}yts ${url}`]
-  ], m)
-}
-handler.help = ['play', 'play2'].map(v => v + ' <pencarian>')
-handler.tags = ['downloader', 'limitmenu']
-handler.command = /^play2?$/i
-
-handler.exp = 0
-handler.limit = true
-handler.register = true
-
-export default handler */
-// ---------------------------new------------------------------------------------
-/*
-import fetch from 'node-fetch'
-import { youtubeSearch } from '@bochilteam/scraper'
-let handler = async (m, { conn, groupMetadata, usedPrefix, text, args, command }) => {
-let fdoc = {quoted:{key : {participant : '0@s.whatsapp.net'},message: {documentMessage: {title: `${command}`}}}}
-try {
-  if (!text) throw `Use example ${usedPrefix}${command} gustixa`
-  let vid = (await youtubeSearch(text)).video[0]
-  if (!vid) throw 'Video/Audio Tidak ditemukan'
-  let { title, description, thumbnail, videoId, durationH, viewH, publishedTime } = vid
-  const url = 'https://www.youtube.com/watch?v=' + videoId
-  let whmodsdev = `*${htki} PLAY ${htka}*
-
-  📌 *Title:* ${title}
-🔗 *Url:* ${url}
-📔 *Description:* ${description}
-
-⏲️ *Published:* ${publishedTime}
-⌚ *Duration:* ${durationH}
-👁️ *Views:* ${viewH}
-  `
-  await conn.sendButton(m.chat, whmodsdev, wm, thumbnail, [
-    ['🎶 Audio', `${usedPrefix}yta ${url} yes`],
-    ['🎥 Video', `${usedPrefix}ytv ${url} yes`],
-    ['🔎 Youtube Search', `${usedPrefix}yts ${text}`]
-], m, fdoc)
-} 
-catch {
-if (!text) throw 'Input Query'
-  let vid = (await youtubeSearch(text)).video[0]
-  if (!vid) throw 'Video/Audio Tidak Ditemukan'
-  let { title, description, thumbnail, videoId, durationH, durationS, viewH, publishedTime } = vid
-  let url = 'https://www.youtube.com/watch?v=' + videoId
-  let ytLink = `https://yt-downloader.akkun3704.repl.co/?url=${url}&filter=audioonly&quality=highestaudio&contenttype=audio/mpeg`
-  let capt = `*${htki} PLAY ${htka}*
-
-  📌 *Title:* ${title}
-🔗 *Url:* ${url}
-📔 *Description:* ${description}
-
-⏲️ *Published:* ${publishedTime}
-⌚ *Duration:* ${durationH}
-👁️ *Views:* ${viewH}
-  `
-  let buttons = [{ buttonText: { displayText: '🎶 Audio/Vn' }, buttonId: `${usedPrefix}yta ${url}` }, { buttonText: { displayText: '🎥 Video' }, buttonId: `${usedPrefix}ytv ${url}` }, { buttonText: { displayText: '🔎 Youtube Search' }, buttonId: `${usedPrefix}yts ${text}` }]
-  let msg = await conn.sendMessage(m.chat, { image: { url: thumbnail }, caption: capt, footer: '_Audio on progress..._', buttons }, { quoted: m })
-  // if (durationS > 4000) return conn.sendMessage(m.chat, { text: `*Download:* ${await shortUrl(ytLink)}\n\n_Duration too long..._` }, { quoted: msg })
-  conn.sendMessage(m.chat, { audio: { url: ytLink }, mimetype: 'audio/mpeg' }, { quoted: msg })
-}
-
-}
-handler.help = ['play', 'play2'].map(v => v + ' <pencarian>')
-handler.tags = ['downloader', 'limitmenu']
-handler.command = /^play2?$/i
-
-handler.exp = 0
-handler.limit = true
-handler.register = true
-
-export default handler
-
-async function shortUrl(url) {
-  url = encodeURIComponent(url)
-  let res = await fetch(`https://is.gd/create.php?format=simple&url=${url}`)
-  if (!res.ok) throw false
-  return await res.text()
-}
-
-*/
