@@ -43,10 +43,10 @@ let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen
             ]
         }
         return await conn.sendMessage(m.chat, message)*/
-conn.reply(m.chat, info, m, { quoted: fkontak },{ contextInfo: { externalAdReply: { showAdAttribution: true,
-      mediaUrl: "https://github.com/ImYanXiao",
+conn.reply(m.chat, info, m, { quoted: fakes },{ contextInfo: { externalAdReply: { showAdAttribution: true,
+      mediaUrl: "https://github.com/WH-MODS-BOT",
       mediaType: 2,
-      description: "https://github.com/ImYanXiao", 
+      description: "https://github.com/WH-MODS-BOT", 
       title: 'whmods-ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ',
       body: wm,
       thumbnail: thumb,
