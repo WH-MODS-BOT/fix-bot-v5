@@ -1,11 +1,11 @@
+// BY WH MODS DEV
 import fetch from 'node-fetch'
-import fs from 'fs'
 import axios from 'axios'
 let handler = async(m, { conn, groupMetadata, usedPrefix, text, args, command }) => {
   let imgr = flaaa.getRandom()
 if (command == 'ttkneoxr') {
 if (!text) throw `Contoh:\n${usedPrefix + command} https://vt.tiktok.com/ZSeJ7P56G`
-let f = await axios(`https://api.neoxr.my.id/api/tiktok?url=${text}&apikey=5VC9rvNx`)
+let f = await(await fetch(`https://api.neoxr.my.id/api/tiktok?url=${text}&apikey=cfALv5`)).json()
 let x = f.data
 let whmods = `*「 🇹 ᴛ ɪ ᴋ ᴛ ᴏ ᴋ 」*
                 ████████▀▀▀████
@@ -18,13 +18,52 @@ let whmods = `*「 🇹 ᴛ ɪ ᴋ ᴛ ᴏ ᴋ 」*
                 ███▄▄▄▄▄███████
 ────────── ⇆ㅤ◁ㅤ ❚❚ㅤ ▷ㅤ↻ ──────────
 ${cmenut} *Info Detail Tiktok*
-${cmenub} *Caption:* ${x.caption}
+${cmenub} *Caption:* ${f.caption}
 ${cmenuf}
 `
-  let buttons = [{ buttonText: { displayText: 'WM' }, buttonId: `.get ${x.data.videoWM}` }, { buttonText: { displayText: 'No WM' }, buttonId: `.get ${x.data.video}` }, { buttonText: { displayText: 'Audio' }, buttonId: `.get ${x.data.audio}` }]
-  let msg = await conn.sendMessage(m.chat, { image: { url: `${imgr + 'Api Neoxr'}`}, caption: whmods, footer: botdate, buttons }, { quoted: m })
-  conn.sendMessage(m.chat, { quoted: msg })
+conn.sendButton(m.chat, whmods, author, x.video, [["🎥 Video [WM]", usedPrefix + "get " + x.videoWM], ["🎶 Music", usedPrefix + "get " + x.audio]], m, fakes)
 }
+
+if (command == 'ttkzahwazein') {
+  if (!text) throw `Contoh:\n${usedPrefix + command} https://vt.tiktok.com/ZSeJ7P56G`
+  let f = await(await fetch("https://api.zahwazein.xyz/downloader/tiktok?apikey=LuOlangNgentot&url=" + text)).json()
+  let x = f.result
+  let thumbwahid = await(await fetch(x.author.avatar)).buffer()
+  let whmods = `*「 🇹 ᴛ ɪ ᴋ ᴛ ᴏ ᴋ 」*
+                  ████████▀▀▀████
+                  ████████────▀██
+                  ████████──█▄──█
+                  ███▀▀▀██──█████
+                  █▀──▄▄██──█████
+                  █──█████──█████
+                  █▄──▀▀▀──▄█████
+                  ███▄▄▄▄▄███████
+  ────────── ⇆ㅤ◁ㅤ ❚❚ㅤ ▷ㅤ↻ ──────────
+  ${cmenut} *Info Detail Tiktok*
+  ${cmenub} *Name :* ${x.author.name} | @${x.author.unique_id}
+  ${readMore}${cmenub} *Deck Acc :* ${x.author.signature}
+  ${cmenub} *Caption :* ${x.title}
+  ${cmenub} *Uploaded Date :* ${x.created_at}
+  ${cmenub} *Duration Video :* ${x.video.durationFormatted}
+  ${cmenub} *Like :* ${x.stats.likeCount}
+  ${cmenub} *Comment:* ${x.stats.commentCount}
+  ${cmenub} *Share :* ${x.stats.shareCount}
+  ${cmenub} *Play :* ${x.stats.playCount}
+  ${cmenub} *Save :* ${x.stats.saveCount}
+  ${cmenub} *Song :* ${x.music.title}-${x.music.author}
+  ${cmenuf}
+  `
+  conn.sendButton(m.chat, whmods, author, x.video.noWatermark, [["🎥 Video [WM]", usedPrefix + "get " + x.video.watermark], ["🎶 Music", usedPrefix + "get " + x.music.play_url]], m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    mediaUrl: "https://Instagram.com/_ctzhid",
+    mediaType: "VIDEO",
+    description: "https://www.instagram.com/p/CevoCg5hG-p/?utm_source=ig_web_copy_link", 
+    title: 'WH-MODS-DEV-V1 MultiDevice',
+    body: wm,
+    thumbnail: thumbwahid,
+    sourceUrl: sig
+  }
+  } })
+  }
 
 if (command == 'ttkxcoders') {
   if (!text) throw `Contoh:\n${usedPrefix + command} https://vt.tiktok.com/ZSeJ7P56G`
@@ -57,8 +96,9 @@ if (command == 'ttkxcoders') {
   
   if (command == 'ttkzenzapis') {
     if (!text) throw `Contoh:\n${usedPrefix + command} https://vt.tiktok.com/ZSeJ7P56G`
-    let f = await axios(`https://zenzapis.xyz/downloader/musically?apikey=f9fccfcff1&url=${text}`)
-    let x = f.data
+    let f = await(await fetch("https://api.zahwazein.xyz/downloader/musically?apikey=LuOlangNgentot&url=" + text)).json()
+    let x = f.result
+    let thumbwahid = await(await fetch(x.thumb)).buffer()
     let whmods = `*「 🇹 ᴛ ɪ ᴋ ᴛ ᴏ ᴋ 」*
                     ████████▀▀▀████
                     ████████────▀██
@@ -73,133 +113,23 @@ if (command == 'ttkxcoders') {
     ${cmenub} Silahkan Pilih Dibawah!!!
     ${cmenuf}
     `
-    const sections = [
-      {
-     title: `${htjava} Video✦-------`,
-     rows: [
-          {title: "Video", rowId: `.get ${x.result.video}`, description: 'Video' },
-          {title: "No WM", rowId: `.get ${x.result.nowm}`, description: 'Anti WM' },
-          {title: "Original", rowId: `.get ${x.result.video_original}`, description: 'Original Abis' },
-           ]
-       },{
-           title: `${htjava} Audio ✦-------`,
-           rows: [
-          {title: "Audio", rowId: `.get ${x.result.audio}`, description: 'Audio' },
-          {title: "Audio Original", rowId: `.get ${x.result.audio_original}`, description: 'Original Abis' },
-           ]
-       },
-   ]
-   
-   const listMessage = {
-     text: whmods,
-     footer: botdate,
-     title: wm,
-     buttonText: "Download !!!",
-     sections
-   }
-   await conn.sendMessage(m.chat, listMessage, { quoted: fakes, mentions: await conn.parseMention(whmods), contextInfo:{ forwardingScore: 99999, isForwarded: true }})
-   
+    conn.sendButton(m.chat, whmods, author, x.url_hd, [["🎥 Video [WM]", usedPrefix + "get " + x.url_wm], ["🎥 Video [No WM]", usedPrefix + "get " + x.url_nowm], ["🎶 Music", usedPrefix + "get " + x.audio]], m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+      mediaUrl: "https://Instagram.com/_ctzhid",
+      mediaType: "VIDEO",
+      description: "https://www.instagram.com/p/CevoCg5hG-p/?utm_source=ig_web_copy_link", 
+      title: 'WH-MODS-DEV-V1 MultiDevice',
+      body: wm,
+      thumbnail: thumbwahid,
+      sourceUrl: sig
+    }
+    } })
   }
 }
 
-  handler.help = ['ttkneoxr', 'ttkxcoders', 'ttkzenzapis'].map(v => v + ' <url>')
-  handler.command = /^(ttkneoxr|ttkxcoders|ttkzenzapis)$/i
+  handler.help = ['ttkneoxr', 'ttkxcoders', 'ttkzenzapis', 'ttkzahwazein'].map(v => v + ' <url>')
+  handler.command = /^(ttkneoxr|ttkxcoders|ttkzenzapis|ttkzahwazein)$/i
       
   export default handler
-/*
-if (command == 'ttkbetabotz') {
-if (!text) throw `Contoh:\n${usedPrefix + command} https://vt.tiktok.com/ZSeJ7P56G`
-let f = await axios(`https://betabotz-api.herokuapp.com/api/download/tiktok?url=${text}&apikey=BetaBotz`)
-let x = f.data
-let whmods = `*「 🇹 ᴛ ɪ ᴋ ᴛ ᴏ ᴋ 」*
-                ████████▀▀▀████
-                ████████────▀██
-                ████████──█▄──█
-                ███▀▀▀██──█████
-                █▀──▄▄██──█████
-                █──█████──█████
-                █▄──▀▀▀──▄█████
-                ███▄▄▄▄▄███████
-────────── ⇆ㅤ◁ㅤ ❚❚ㅤ ▷ㅤ↻ ──────────
-${cmenut} *Info Detail Tiktok*
-${cmenub} Jangan Lupa Subscribe Channel WH MODS DEV
-${cmenuf}
-`
-  let buttons = [{ buttonText: { displayText: 'WM' }, buttonId: `.get ${x.result.link.watermark}` }, { buttonText: { displayText: 'No WM' }, buttonId: `.get ${x.result.link.nowatermark}` }, { buttonText: { displayText: 'Audio' }, buttonId: `.get ${x.result.link.audio}` }]
-  let msg = await conn.sendMessage(m.chat, { image: { url: `${imgr + 'Api BetaBotz'}`}, caption: whmods, footer: botdate, buttons }, { quoted: m })
-  conn.sendMessage(m.chat, { quoted: msg })
-}
 
-if (command == 'ttkadiixyz') {
-  if (!text) throw `Contoh:\n${usedPrefix + command} https://vt.tiktok.com/ZSeJ7P56G`
-  let f = await axios(`https://adiixyzapi.herokuapp.com/api/tiktok?url=${text}`)
-  let x = f.data
-  let whmods = `*「 🇹 ᴛ ɪ ᴋ ᴛ ᴏ ᴋ 」*
-                  ████████▀▀▀████
-                  ████████────▀██
-                  ████████──█▄──█
-                  ███▀▀▀██──█████
-                  █▀──▄▄██──█████
-                  █──█████──█████
-                  █▄──▀▀▀──▄█████
-                  ███▄▄▄▄▄███████
-  ────────── ⇆ㅤ◁ㅤ ❚❚ㅤ ▷ㅤ↻ ──────────
-  ${cmenut} *Info Detail Tiktok*
-  ${cmenub} Jangan Lupa Subscribe Channel WH MODS DEV
-  ${cmenuf}
-  `
-    let buttons = [{ buttonText: { displayText: 'No WM' }, buttonId: `.get ${x.result.nowm}` }, { buttonText: { displayText: 'MP4' }, buttonId: `.get ${x.result.mp4}` }, { buttonText: { displayText: 'Original' }, buttonId: `.get ${x.result.original}` }]
-    let msg = await conn.sendMessage(m.chat, { image: { url: `${imgr + 'Api Adiixyz'}`}, caption: whmods, footer: botdate, buttons }, { quoted: m })
-    conn.sendMessage(m.chat, { quoted: msg })
-  }
-
-if (command == 'ttkanabot') {
-if (!text) throw `Contoh:\n${usedPrefix + command} https://vt.tiktok.com/ZSeJ7P56G`
-let f = await axios(`https://anabotofc.herokuapp.com/api/download/tiktok2?url=${text}&apikey=AnaBot`)
-let x = f.data
-let whmods = `*「 🇹 ᴛ ɪ ᴋ ᴛ ᴏ ᴋ 」*
-                ████████▀▀▀████
-                ████████────▀██
-                ████████──█▄──█
-                ███▀▀▀██──█████
-                █▀──▄▄██──█████
-                █──█████──█████
-                █▄──▀▀▀──▄█████
-                ███▄▄▄▄▄███████
-────────── ⇆ㅤ◁ㅤ ❚❚ㅤ ▷ㅤ↻ ──────────
-${cmenut} *Info Detail Tiktok*
-${cmenub} Jangan Lupa Subscribe Channel WH MODS DEV
-${cmenuf}
-`
-      let buttons = [{ buttonText: { displayText: 'No WM' }, buttonId: `.get ${x.result.nowm}` }, { buttonText: { displayText: 'MP4' }, buttonId: `.get ${x.result.mp4}` }, { buttonText: { displayText: 'Original' }, buttonId: `.get ${x.result.original}` }]
-      let msg = await conn.sendMessage(m.chat, { image: { url: `${imgr + 'Api Anabot'}`}, caption: whmods, footer: botdate, buttons }, { quoted: m })
-      conn.sendMessage(m.chat, { quoted: msg })
-    }
-
-if (command == 'ttkxteam') {
-if (!text) throw `Contoh:\n${usedPrefix + command} https://vt.tiktok.com/ZSeJ7P56G`
-let f = await axios(`https://api.xteam.xyz/dl/tiktok?url=${text}&APIKEY=HIRO`)
-let x = f.data
-let whmods = `*「 🇹 ᴛ ɪ ᴋ ᴛ ᴏ ᴋ 」*
-                ████████▀▀▀████
-                ████████────▀██
-                ████████──█▄──█
-                ███▀▀▀██──█████
-                █▀──▄▄██──█████
-                █──█████──█████
-                █▄──▀▀▀──▄█████
-                ███▄▄▄▄▄███████
-────────── ⇆ㅤ◁ㅤ ❚❚ㅤ ▷ㅤ↻ ──────────
-${cmenut} *Info Detail Tiktok*
-${cmenub} *Name :* ${x.result.name}
-${cmenub} *Caption :* ${x.result.caption}
-${cmenuf}
-`
-  let buttons = [{ buttonText: { displayText: 'Download' }, buttonId: `.get ${x.result.link}` }, { buttonText: { displayText: 'Donasi' }, buttonId: '.donasi' }, { buttonText: { displayText: 'Sewa' }, buttonId: '.sewa' }]
-  let msg = await conn.sendMessage(m.chat, { image: { url: `${imgr + 'Api X-Team'}`}, caption: whmods, footer: botdate, buttons }, { quoted: m })
-  conn.sendMessage(m.chat, { quoted: msg })
-  }
-*/
-
-// handler.help = ['ttkneoxr', 'ttkbetabotz', 'ttkxcoders', 'ttkadiixyz', 'ttkanabot', 'ttkxteam', 'ttkzenzapis'].map(v => v + ' <url>')
-//handler.command = /^(ttkneoxr|ttkbetabotz|ttkxcoders|ttkadiixyz|ttkanabot|ttkxteam|ttkzenzapis)$/i
+  const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
