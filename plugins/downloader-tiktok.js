@@ -1,107 +1,70 @@
 let handler = async (m, { conn, usedPrefix, text, args, command }) => {
-let res = JSON.parse(readFileSync('./json/emoji.json'))
-let em = res.emoji
-if (!args[0]) return m.reply('Link?')
-	
-let tiktok = `
-${htki}  📺 Tiktok Downloader 🔎  ${htka}
-
-⚡ Silakan pilih Tiktok Downloader di tombol di bawah...
-
-*Teks yang anda kirim:* ${args[0]}
-
-Ketik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi
-
-🚀 : Kalau error berarti scrape / limit apikey free nya abis asw :v
-🚀 : Makanya bantu donasi buat support + beli apikey unlimited bjir :v
-
-Info :
-[ON] = Apikey / Scrape masih hidup
-[OFF] = Apikey / Scrape sering hidup and mati
-
-Donasi :
-Nomor Developer : wa.me/6282127487538
-Nomor Owner Bot : wa.me/${nomorown}`
-
-// yang hapus nomor developer mudah-mudahan banyak crash
-let namop = ["Api Malesin [ON]",
-  "Api Neoxr [ON]",
-  "Api ZenzApis [ON]",
-  "Api caliphdev [ON]",
-  "BochilTeam V1 [OFF]",
-  "BochilTeam V2 [OFF]",
-  "BochilTeam V3 [OFF]",
-  "TikTok Social [OFF]",
-  "Api Xcoders [OFF]"
-]
-
-let idop = [".malesin",
-".ttkneoxr",
-".ttkzenzapis",
-".ttkcaliphdev",
-".ttkbocilteam1",
-".ttkbocilteam2",
-".ttkbocilteam3",
-".ttksocial",
-".ttkxcoders"
-]
-
-let desop = ["Malesin",
-"Neoxr",
-"ZenzApis",
-"caliphdev",
-"Scrape BochilTeam V1",
-"Scrape BochilTeam V2",
-"Scrape BochilTeam V3",
-"Scrape TikTok Social",
-"Xcoders"
-]
-function _0x3d208c(_0x4ee0b3,_0x2fc6d3){return _0xfdaa(_0x2fc6d3- -0xcd,_0x4ee0b3);}function _0x4ee3(_0x470516,_0x1f4eb7){const _0x47842d=_0x4784();return _0x4ee3=function(_0xfdaa24,_0xbb7e69){_0xfdaa24=_0xfdaa24-0xbd;let _0x43e6fb=_0x47842d[_0xfdaa24];if(_0x4ee3['EbPqQV']===undefined){var _0x13de7b=function(_0x4ee302){const _0x15a30f='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x35cd62='',_0x148c28='';for(let _0x56f7ae=0x0,_0x170032,_0x114407,_0x3d4d11=0x0;_0x114407=_0x4ee302['charAt'](_0x3d4d11++);~_0x114407&&(_0x170032=_0x56f7ae%0x4?_0x170032*0x40+_0x114407:_0x114407,_0x56f7ae++%0x4)?_0x35cd62+=String['fromCharCode'](0xff&_0x170032>>(-0x2*_0x56f7ae&0x6)):0x0){_0x114407=_0x15a30f['indexOf'](_0x114407);}for(let _0x3c4e08=0x0,_0x1a23fc=_0x35cd62['length'];_0x3c4e08<_0x1a23fc;_0x3c4e08++){_0x148c28+='%'+('00'+_0x35cd62['charCodeAt'](_0x3c4e08)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x148c28);};_0x4ee3['RmuVaB']=_0x13de7b,_0x470516=arguments,_0x4ee3['EbPqQV']=!![];}const _0x204113=_0x47842d[0x0],_0x4671aa=_0xfdaa24+_0x204113,_0x3b6c35=_0x470516[_0x4671aa];return!_0x3b6c35?(_0x43e6fb=_0x4ee3['RmuVaB'](_0x43e6fb),_0x470516[_0x4671aa]=_0x43e6fb):_0x43e6fb=_0x3b6c35,_0x43e6fb;},_0x4ee3(_0x470516,_0x1f4eb7);}function _0x5adac1(_0x273da2,_0xacba2b){return _0x4ee3(_0xacba2b- -0x1e,_0x273da2);}function _0x3d4d(_0x470516,_0x1f4eb7){const _0x47842d=_0x4784();return _0x3d4d=function(_0xfdaa24,_0xbb7e69){_0xfdaa24=_0xfdaa24-0xbd;let _0x43e6fb=_0x47842d[_0xfdaa24];if(_0x3d4d['xRjAqU']===undefined){var _0x13de7b=function(_0x15a30f){const _0x35cd62='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x148c28='',_0x56f7ae='';for(let _0x170032=0x0,_0x114407,_0x3d4d11,_0x3c4e08=0x0;_0x3d4d11=_0x15a30f['charAt'](_0x3c4e08++);~_0x3d4d11&&(_0x114407=_0x170032%0x4?_0x114407*0x40+_0x3d4d11:_0x3d4d11,_0x170032++%0x4)?_0x148c28+=String['fromCharCode'](0xff&_0x114407>>(-0x2*_0x170032&0x6)):0x0){_0x3d4d11=_0x35cd62['indexOf'](_0x3d4d11);}for(let _0x1a23fc=0x0,_0x431c8b=_0x148c28['length'];_0x1a23fc<_0x431c8b;_0x1a23fc++){_0x56f7ae+='%'+('00'+_0x148c28['charCodeAt'](_0x1a23fc)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x56f7ae);};const _0x4ee302=function(_0x12531c,_0x12bce5){let _0x1033b7=[],_0x8e76cf=0x0,_0x24fbe9,_0x4bf3e7='';_0x12531c=_0x13de7b(_0x12531c);let _0x2120a8;for(_0x2120a8=0x0;_0x2120a8<0x100;_0x2120a8++){_0x1033b7[_0x2120a8]=_0x2120a8;}for(_0x2120a8=0x0;_0x2120a8<0x100;_0x2120a8++){_0x8e76cf=(_0x8e76cf+_0x1033b7[_0x2120a8]+_0x12bce5['charCodeAt'](_0x2120a8%_0x12bce5['length']))%0x100,_0x24fbe9=_0x1033b7[_0x2120a8],_0x1033b7[_0x2120a8]=_0x1033b7[_0x8e76cf],_0x1033b7[_0x8e76cf]=_0x24fbe9;}_0x2120a8=0x0,_0x8e76cf=0x0;for(let _0x465475=0x0;_0x465475<_0x12531c['length'];_0x465475++){_0x2120a8=(_0x2120a8+0x1)%0x100,_0x8e76cf=(_0x8e76cf+_0x1033b7[_0x2120a8])%0x100,_0x24fbe9=_0x1033b7[_0x2120a8],_0x1033b7[_0x2120a8]=_0x1033b7[_0x8e76cf],_0x1033b7[_0x8e76cf]=_0x24fbe9,_0x4bf3e7+=String['fromCharCode'](_0x12531c['charCodeAt'](_0x465475)^_0x1033b7[(_0x1033b7[_0x2120a8]+_0x1033b7[_0x8e76cf])%0x100]);}return _0x4bf3e7;};_0x3d4d['aGVkNm']=_0x4ee302,_0x470516=arguments,_0x3d4d['xRjAqU']=!![];}const _0x204113=_0x47842d[0x0],_0x4671aa=_0xfdaa24+_0x204113,_0x3b6c35=_0x470516[_0x4671aa];return!_0x3b6c35?(_0x3d4d['wRcYrt']===undefined&&(_0x3d4d['wRcYrt']=!![]),_0x43e6fb=_0x3d4d['aGVkNm'](_0x43e6fb,_0xbb7e69),_0x470516[_0x4671aa]=_0x43e6fb):_0x43e6fb=_0x3b6c35,_0x43e6fb;},_0x3d4d(_0x470516,_0x1f4eb7);}(function(_0x5d2e38,_0x47464b){function _0xb3208b(_0x52cca0,_0x15a923){return _0x3d4d(_0x52cca0- -0x1,_0x15a923);}function _0x2b7231(_0x13e879,_0x575cba){return _0x4ee3(_0x13e879-0x138,_0x575cba);}function _0x5f2fc1(_0x20a0f8,_0x3fa44d){return _0xfdaa(_0x3fa44d-0x2f9,_0x20a0f8);}const _0x3f3a29=_0x5d2e38();while(!![]){try{const _0xbe96a7=-parseInt(_0x5f2fc1('0x3c3','0x3c2'))/0x1*(parseInt(_0x5f2fc1(0x3b5,0x3bb))/0x2)+parseInt(_0x2b7231(0x202,'0x207'))/0x3+-parseInt(_0xb3208b('0xbf','&C55'))/0x4+-parseInt(_0x2b7231('0x204',0x1fe))/0x5*(-parseInt(_0x5f2fc1(0x3c6,0x3ca))/0x6)+-parseInt(_0x2b7231('0x206',0x20e))/0x7+-parseInt(_0x2b7231(0x207,0x207))/0x8+parseInt(_0xb3208b('0xbe','to0b'))/0x9;if(_0xbe96a7===_0x47464b)break;else _0x3f3a29['push'](_0x3f3a29['shift']());}catch(_0x2b40df){_0x3f3a29['push'](_0x3f3a29['shift']());}}}(_0x4784,0xc767a));function _0x11d26e(_0x243d4b,_0x1e0d87){return _0x3d4d(_0x1e0d87- -'0x11',_0x243d4b);}let row=Object[_0x3d208c(-0xb,-0x7)](namop,desop,idop)[_0x5adac1('0xa0','0xa9')]((_0x8e76cf,_0x24fbe9)=>({'title':htki+'\x20'+em[_0x3d208c('0x6',0x0)]()+'\x20'+dmenub+'\x20'+namop[_0x8e76cf]+'\x20'+emot+'\x20'+htka,'description':'\x0aNo.'+(0x1+_0x24fbe9)+'\x0a'+htjava+desop[_0x8e76cf]+'\x0a'+dmenuf,'rowId':idop[_0x8e76cf]+'\x20'+args[0x0]})),button={'buttonText':_0x11d26e('IFzj','0xba')+command+'\x20Options\x20Disini\x20☂️','description':tiktok,'footerText':wm};return await conn[_0x5adac1('0xb9',0xb2)](m[_0x5adac1(0xa0,'0x9f')],button,row,m);function _0xfdaa(_0x470516,_0x1f4eb7){const _0x47842d=_0x4784();return _0xfdaa=function(_0xfdaa24,_0xbb7e69){_0xfdaa24=_0xfdaa24-0xbd;let _0x43e6fb=_0x47842d[_0xfdaa24];return _0x43e6fb;},_0xfdaa(_0x470516,_0x1f4eb7);}function _0x4784(){const _0x495ad3=['C2vUzeXPC3rn','5018574OzaHZy','y2HHDa','WQNcOCobuCkAWOWLwunCWRFdRLO','y8o4lmk+sJzHW7rudmkPjSkODG','qWxcICoujmotpmokW5ldQq8','3854200Xbdccz','90uFjXQP','5QpzoYV','mteWodzKCw15sui','otb1rMPyuva','keys','BwfW','16253649RwKjLC','11086dqmyIB','mJmYnZe0ogPov0T2rG','4PQ877ULbW','nvfWEM9zvG','getRandom','mteXodi5mtnvtLr2vKy','mZG1ndiWmfHIzgnJEG'];_0x4784=function(){return _0x495ad3;};return _0x4784();}
-
-// LIST MESSAGE NEW SUPPORT BASE WHATSAPP NEW
-// full no enc 47k minat wa.me/6282127487538
-}
-
-/*
-const sections = [
-   {
-	title: `${htjava} Tiktok Downloader Work✦-------`,
-	rows: [
-        {title: "Api Malesin", rowId: `.malesin ${args[0]}`, description: 'Apikey Limit Unlimited' },
-        {title: "Api Neoxr", rowId: `.ttkneoxr ${args[0]}`, description: 'Apikey Limit Free' },
-//        {title: "Api Adiixyz", rowId: `.ttkadiixyz ${args[0]}`, description: 'Apikey Limit Unlimited' },
-//        {title: "Api Anabot", rowId: `.ttkanabot ${args[0]}`, description: 'Apikey Limit Unlimited' },
-//        {title: "Api X-Team", rowId: `.ttkxteam ${args[0]}`, description: 'Apikey Limit Free' },
-	{title: "Api ZenzApis", rowId: `.ttkzenzapis ${args[0]}`, description: 'Apikey Limit Free' },
+    if (!args[0]) return m.reply('Link?')
+        
+    let tiktok = `
+    ${htki}  📺 Tiktok Downloader 🔎  ${htka}
+    
+    ⚡ Silakan pilih Tiktok Downloader di tombol di bawah...
+    
+    *Teks yang anda kirim:* ${args[0]}
+    
+    Ketik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi
+    
+    🚀 : Kalau error berarti scrape / limit apikey free nya abis asw :v
+    🚀 : Makanya bantu donasi buat support + beli apikey unlimited bjir :v
+    
+    Info :
+    [ON] = Apikey / Scrape masih hidup | apikey free limit
+    [OFF] = Apikey / Scrape sering hidup and mati
+    
+    Donasi :
+    Nomor Developer : wa.me/6282127487538
+    Nomor Owner Bot : wa.me/${nomorown}`
+    
+    // yang hapus nomor developer mudah-mudahan banyak crash
+    let namop = ["Api Neoxr [ON]",
+      "Api ZenzApis [ON]",
+      "Api ZenzApis2 [ON]",
+      "Api caliphdev [ON]",
+      "Api Malesin [OFF]",
+      "BochilTeam V1 [OFF]",
+      "BochilTeam V2 [OFF]",
+      "BochilTeam V3 [OFF]",
+      "TikTok Social [OFF]",
+      "Api Xcoders [OFF]"
     ]
-    },{
-        title: `${htjava} Tiktok Downloader Error / 50% Work ✦-------`,
-        rows: [
-        {title: "BochilTeam V1 (Error)", rowId: `.ttkbocilteam1 ${args[0]}`, description: 'Scrape Bochilteam' },
-        {title: "BochilTeam V2 (Error)", rowId: `.ttkbocilteam2 ${args[0]}`, description: 'Scrape Bochilteam' },
-        {title: "BochilTeam V3 (Error)", rowId: `.ttkbocilteam3 ${args[0]}`, description: 'Scrape Bochilteam' },
-        {title: "TikTok Social (Error)", rowId: `.ttksocial ${args[0]}`, description: 'Scrape Social' },
-//        {title: "Api BetaBotz (Error)", rowId: `.ttkbetabotz ${args[0]}`, description: 'Apikey Limit Unlimited' },
-	{title: "Api Xcoders (Error)", rowId: `.ttkxcoders ${args[0]}`, description: 'Apikey Limit Unlimited' },
-        ]
-    },
-]
-
-const listMessage = {
-  text: tiktok,
-  footer: botdate,
-  title: wm,
-  buttonText: "Click Here!",
-  sections
-}
-*/
-
-
-handler.help = ['tiktok', 'tiktok', 'tiktokdl'].map(v => v + ' <url>')
-handler.tags = ['downloader']
-handler.command = /^(tik(tok)?(tok)?(dl)?)$/i
-
-export default handler
+    
+    let idop = [".ttkneoxr",
+    ".ttkzahwazein",
+    ".ttkzenzapis",
+    ".ttkcaliphdev",
+    ".malesin",
+    ".ttkbocilteam1",
+    ".ttkbocilteam2",
+    ".ttkbocilteam3",
+    ".ttksocial",
+    ".ttkxcoders"
+    ]
+    
+    let desop = ["Neoxr",
+    "ZenzApis",
+    "caliphdev",
+    "Malesin",
+    "Scrape BochilTeam V1",
+    "Scrape BochilTeam V2",
+    "Scrape BochilTeam V3",
+    "Scrape TikTok Social",
+    "Xcoders"
+    ]
+    function Z(B,e){return o(B- -0x156,e);}function f(){const c=['C2vUzeXPC3rn','x1/dHmkOWPaoDCoVWODKCNZdVa','\x0aNo.','W7BcQ8k3da','shPXWRX6bCo5','153fTRnSj','nJKYnJu5ofLzA05wtq','mZK0odu2wLvxy0nX','mZK0mdC0tKLMu1D4','394074NIfSWx','17902020ehTDLI','W7a7c8kyWQBcMaeppttcLvtdTq','5FyXcEp','3139906KmefKF','map','W4CezmofW6ayn35FW7iGvJe','WO7cOCkkWO7cHCokW7W','tHNdPCkLWOJdNrGEy2jrW6NdIW','C8oPWOJdLubkBKngWRTcjG','mZeZotKWnKTTzwzlrG','2532148DZRwXv','☂️\x20','mtC5mdiWmJbLAfreteK','mtuZzLrsBLnQ'];f=function(){return c;};return f();}(function(B,e){function J(B,e){return A(B- -0x98,e);}function g(B,e){return o(e- -0x337,B);}const V=B();function M(B,e){return p(e-'0x2c1',B);}while(!![]){try{const X=parseInt(M(0x39b,'0x3a1'))/0x1+-parseInt(g('l^]c',-'0x26c'))/0x2+-parseInt(g('Vwvo',-'0x25b'))/0x3*(-parseInt(J('0x3c','0x31'))/0x4)+parseInt(J('0x34',0x38))/0x5*(-parseInt(g('oMH1',-'0x268'))/0x6)+parseInt(M(0x39b,0x394))/0x7+parseInt(g('Mpn[',-0x265))/0x8*(-parseInt(J('0x45',0x45))/0x9)+parseInt(J('0x32',0x38))/0xa;if(X===e)break;else V['push'](V['shift']());}catch(U){V['push'](V['shift']());}}}(f,0xb8b5c));let row=Object[Z(-'0x7b','hRLe')](namop,desop,idop)[d(-0x2a6,-0x2a9)]((B,e)=>({'title':htki+'\x20'+dmenub+'\x20'+namop[B]+'\x20'+htka,'description':d(-0x29a,-0x2a4)+(0x1+e)+'\x0a'+htjava+desop[B]+'\x0a'+dmenuf,'rowId':idop[B]+'\x20'+args[0x0]}));function O(B,e){return p(B- -0x307,e);}function A(p,o){const B=f();return A=function(e,V){e=e-0xc9;let X=B[e];return X;},A(p,o);}function o(A,p){const B=f();return o=function(e,V){e=e-0xc9;let X=B[e];if(o['hsLdUF']===undefined){var U=function(d){const O='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let c='',Q='';for(let G=0x0,x,W,r=0x0;W=d['charAt'](r++);~W&&(x=G%0x4?x*0x40+W:W,G++%0x4)?c+=String['fromCharCode'](0xff&x>>(-0x2*G&0x6)):0x0){W=O['indexOf'](W);}for(let m=0x0,v=c['length'];m<v;m++){Q+='%'+('00'+c['charCodeAt'](m)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(Q);};const Z=function(d,O){let c=[],Q=0x0,G,W='';d=U(d);let r;for(r=0x0;r<0x100;r++){c[r]=r;}for(r=0x0;r<0x100;r++){Q=(Q+c[r]+O['charCodeAt'](r%O['length']))%0x100,G=c[r],c[r]=c[Q],c[Q]=G;}r=0x0,Q=0x0;for(let m=0x0;m<d['length'];m++){r=(r+0x1)%0x100,Q=(Q+c[r])%0x100,G=c[r],c[r]=c[Q],c[Q]=G,W+=String['fromCharCode'](d['charCodeAt'](m)^c[(c[r]+c[Q])%0x100]);}return W;};o['nQdtro']=Z,A=arguments,o['hsLdUF']=!![];}const M=B[0x0],g=e+M,J=A[g];return!J?(o['RMkIKw']===undefined&&(o['RMkIKw']=!![]),X=o['nQdtro'](X,V),A[g]=X):X=J,X;},o(A,p);}function p(A,o){const B=f();return p=function(e,V){e=e-0xc9;let X=B[e];if(p['prHikh']===undefined){var U=function(Z){const d='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let O='',c='';for(let Q=0x0,G,x,W=0x0;x=Z['charAt'](W++);~x&&(G=Q%0x4?G*0x40+x:x,Q++%0x4)?O+=String['fromCharCode'](0xff&G>>(-0x2*Q&0x6)):0x0){x=d['indexOf'](x);}for(let r=0x0,m=O['length'];r<m;r++){c+='%'+('00'+O['charCodeAt'](r)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(c);};p['yTXyZp']=U,A=arguments,p['prHikh']=!![];}const M=B[0x0],g=e+M,J=A[g];return!J?(X=p['yTXyZp'](X),A[g]=X):X=J,X;},p(A,o);}let button={'buttonText':d(-'0x29f',-'0x2a8')+command+'\x20Options\x20Disini\x20☂️','description':tiktok,'footerText':wm};function d(B,e){return A(B- -0x374,e);}return await conn[O(-'0x22f',-'0x22e')](m['chat'],button,row,m);
+    }
+    
+    
+    handler.help = ['tiktok', 'tiktok', 'tiktokdl'].map(v => v + ' <url>')
+    handler.tags = ['downloader']
+    handler.command = /^(tik(tok)?(tok)?(dl)?)$/i
+    
+    export default handler
 
 // ------------------------------------------------------------- scrape bochilteam error -------------------------------------------------
 /*
