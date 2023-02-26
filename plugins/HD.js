@@ -1,10 +1,32 @@
+import uploadImage from '../lib/uploadImage.js'
+import deepai from 'deepai'
 import fetch from 'node-fetch'
 import FormData from 'form-data'
 
-let handler = async (m) => {
+deepai.setApiKey('04f02780-e0bd-44c1-afa2-14cf5a78948c')
 
-try {
- await m.reply('Sedang membuat...')
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+    let q = m.quoted ? m.quoted : m
+    let mime = (q.msg || q).mimetype || q.mediaType || ''
+    if (/image/g.test(mime) && !/webp/g.test(mime)) {
+    	try {
+			let img = await q.download?.()
+			let out = await uploadImage(img)
+			var resp = await deepai.callStandardApi("waifu2x", {
+                        image: out,
+                    })
+                    let w2x1 = resp['output_url']
+           var resep = await deepai.callStandardApi("waifu2x", {
+                        image: w2x1,
+                    })
+                    // console.log(resp);
+                    let w2x2 = resep['output_url']
+           var resup = await   deepai.callStandardApi("torch-srgan", {
+            image: w2x2,
+            })
+            await conn.sendFile(m.chat, resup['output_url'], 'simpcard.png', 'simp', m)
+    	} catch {
+    		await m.reply('Sedang membuat...')
   let q = m.quoted ? m.quoted : m
   let mime = (q.msg || q).mimetype || ''
   if (!mime) throw 'Fotonya Mana?'
@@ -18,9 +40,10 @@ try {
   })
   if (res.status !== 200) throw await res.json()
   await conn.sendFile(m.chat, await res.buffer(), 'hd.jpg', 'Nihh,, Hade kan?', m)
-} catch (e) {
-  m.reply('Ada yang Erorr!')
- }
+    	}
+    } else {
+    	m.reply(`Kirim gambar dengan caption *${usedPrefix + command}* atau tag gambar yang sudah dikirim`)
+    }
 }
 handler.help = ['hd', 'enhance']
 handler.tags = ['tools']
