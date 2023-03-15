@@ -40,7 +40,7 @@ Script ini untuk semua orang, bukan untuk Dijual. Jika dijual neraka menunggumu 
 <a href="https://www.youtube.com/live/3t32UiA-_8Y?feature=share">
     <img align="left" alt="SIEGRIN | YouTube" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Youtube.svg" />
   </a> &nbsp;&nbsp;
-- kalau kurang jelas video replay nya, bisa tanya langsung digrub , link grup bisa check di desk video nya ..........
+(kalau kurang jelas video replay nya, bisa tanya langsung digrub , link grup bisa check di desk video nya ..........)
 
 ---------
 ## ```Connect With Me 📞``` <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="32px">
